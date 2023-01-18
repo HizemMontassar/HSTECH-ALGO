@@ -1,0 +1,23 @@
+function longestSequence(array: number[]): number {
+    let index = 0
+    let counter = 0
+    let longestSequence = 0
+
+    for(let i=0; i<array.length; i++){
+        if(array[i] === 1){
+            counter ++;
+        }
+        else{
+            if(counter > longestSequence){
+                longestSequence = counter
+                index = i
+            }
+            counter = 0
+        }
+    }
+    return index;
+}
+
+const array: number[] = process.argv.slice(3).map(Number);
+console.log(array)
+console.log(longestSequence(array));

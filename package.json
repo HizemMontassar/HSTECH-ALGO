@@ -2,9 +2,12 @@
   "name": "project-name",
   "version": "1.0.0",
   "scripts": {
-    "exec": "ts-node algorithm.ts $1"
+    "exec": "ts-node algorithm.ts "
   },
   "dependencies": {
     "ts-node": "^9.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18"
   }
 }
